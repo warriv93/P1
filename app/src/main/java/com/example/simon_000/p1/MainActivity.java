@@ -134,7 +134,7 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 //        If.setController(controller);
 //        Ef.setController(controller);
         sharedpreferences = getSharedPreferences("MyPREFERENCES", Context.MODE_PRIVATE);
-        if(sharedpreferences!=null) {
+        if(sharedpreferences.contains("un")){
             startLoginDialog();
         }
     }
